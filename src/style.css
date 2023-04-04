@@ -1,0 +1,15 @@
+.square {
+  border: solid 1.5px;
+}
+
+.square {
+  height: 50px;
+  width: 50px;
+}
+
+.row {
+  border:solid;
+  /* background-color: red; */
+  display:flex;
+  width: fit-content;
+}
