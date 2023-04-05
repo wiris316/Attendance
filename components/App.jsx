@@ -1,6 +1,7 @@
 import React from "react";
 import { Component } from "react";
 
+import Month from './Month.js'
 import Row from "./Row.js"
 import '../src/style.css'
 
@@ -10,10 +11,7 @@ class App extends Component {
 
     <div>
       <h1>Daily Attendance</h1>
-        <Row />
-        <Row />
-        <Row />
-        <Row />
+        <Month />
     </div>
     )
   }
