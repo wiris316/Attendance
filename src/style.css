@@ -27,7 +27,7 @@ body {
 }
 
 .container {
-  position: absolute;
+  /* position: absolute; */
   height: 300px;
   /* width: 500px; */
   /* top: 50px; */
@@ -63,7 +63,7 @@ body {
 } */
 
 .attendance-buttons{
-  position:absolute;
+  /* position:absolute; */
   bottom:0;
 }
 
