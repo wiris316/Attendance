@@ -1,15 +1,15 @@
 import React from 'react'; 
 
 const StudentCard = (prop) => {
-  const {fName, lName, attendance, absence} = prop;
+  const {fName, lName, Absent, Present} = prop;
   return (
     <div class="container">
       <div class="card">
-        <h3 class="card-title">{fName}{lName}</h3><br/>
+        <h3 class="card-title">{fName} {lName}</h3><br/>
         <div class="attendance-body">
           <div className="attendance-info">
-            Attended: {attendance}<br/>
-            Absent: {absence}
+            Absent: {Absent}<br/>
+            Attended: {Present}
           </div>
           <div className="attendance-buttons">
             <button id="present-button">Present</button>

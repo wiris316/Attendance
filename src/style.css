@@ -1,4 +1,8 @@
-
+nav {
+  display: flex;
+  justify-content:space-around;
+  border: solid;
+}
 
 .square {
   border: solid 1.5px;
