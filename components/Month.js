@@ -9,6 +9,7 @@ function Month (props) {
   }
   return (
     <div className="Month">
+      <h1>Attendance Sheet</h1>
       {Month}
     </div>
   );

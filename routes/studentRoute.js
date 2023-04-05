@@ -1,11 +1,13 @@
 const express = require('express');
 
 const studentController = require('../server/controllers/studentController')
+
 const router = express.Router();
 
-router.get('/', studentController.getStudents, (req, res) => {
-  return res.status(200).send('hello')
-})
+
+router.get('/',
+  studentController.getStudents,
+  (req, res) => res.status(200).json(res.locals.students))
 
 
 //Users/user/Desktop/SoloProject_draft/server/controllers/studentController.js

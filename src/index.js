@@ -1,7 +1,18 @@
 import React from "react";
 // import ReactDOM from "react-dom";
 import App from '../components/App.jsx';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import { render } from 'react-dom';
+import StudentCard from '../components/StudentCard';
+
+
+
+render(
+  // <BrowserRouter>
+    <App/>,
+  document.getElementById('root')
+)
+
 
 
 // const { Client } = require("pg")
@@ -15,12 +26,3 @@ import { render } from 'react-dom';
 //     })
 //   }
 // }
-
-
-
-
-// ReactDOM.render('hiii', document.getElementById('root'));
-render(
-  <App/>,
-  document.getElementById('root')
-)

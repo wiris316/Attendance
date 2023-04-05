@@ -9,7 +9,7 @@ const PORT = 3000;
 const studentRoute = require('./routes/studentRoute')
 
 app.use(express.json())
-
+app.use(express.urlencoded({ extended: true }));
 app.use('/style.css', express.static(path.join(__dirname, 'src/style.css')));
 app.use('/students', studentRoute)
 
