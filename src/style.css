@@ -67,13 +67,14 @@ nav {
   flex-basis: content;
   /* height: 500px; */
   width: 100%;
+  height: 110%;
   /* display: flex; */
   margin: 30px;
 
 }
 
 .card {
-  height: 300px;
+  height: 360px;
   width: 300px;
   background-color: white;
   border-radius: 10px;
@@ -185,11 +186,11 @@ p {
 
 .present {
   width: 85%;
-  background-color: rgb(95, 208, 87);
+  background-color: rgb(97, 217, 88);
 }
 
 .absent {
-  background-color: rgba(203, 114, 133, 0.675);
+  background-color: rgba(228, 102, 34, 0.675);
   width: 15%;
 }
 
@@ -200,6 +201,29 @@ p {
  } 
 
 
+ .a-box{
+  border:solid;
+  border-color: rgb(214, 210, 210);
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  margin-right: 15px;
+  text-align:center;
+ }
 
-
+ .b-box{
+  border:solid;
+  border-color: rgb(214, 210, 210);
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  margin-left: 15px;
+  text-align:center;
+ }
  
+ .thebox{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 15px;
+ }

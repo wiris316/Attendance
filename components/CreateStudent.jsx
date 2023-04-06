@@ -51,7 +51,9 @@ const CreateStudent = props => {
         setfName('');
         setlName('');
       })
-    .catch(err=> console.log('Error handling submit'))
+      // .then(()=> redirect('/') )
+      .catch(err => console.log('Error handling submit'))
+    window.location.replace('/')
   }
 
   // const handleSubmit = e => {

@@ -39,17 +39,21 @@ const StudentCard = (prop) => {
       <div className="card">
       <button id="delete-button" onClick={handleDelete}>DELETE</button>
         <h3 className="title">{fName} {lName}</h3>
+        <div className="thebox">
+          <div className='a-box'><br/>Present: {Present2} <br/>days</div>
+          <div className='b-box'><br/>  Absent:<br/> {Absent2}<br/> days</div>
+        </div>
         <div className="attendance-body">
 
 
           
           <div className="attendance-info">
-            Attended: {Present2}
+            Attended: 
             <div>
               <div className="bar-container">
                 <div className="attendance present">{Present2}</div>
               </div><br/>
-              Absent: {Absent2}<br />
+              Absent: <br />
   
               <div className="bar-container">
               <div class="attendance absent">{Absent2}</div>
@@ -62,7 +66,7 @@ const StudentCard = (prop) => {
           </div>
           <div className="attendance-buttons">
             <button onClick={() => setPresent( Present2+1 )} id="present-button">Present</button>
-            <button onClick={() => setAbsent(Absent2-1) } id="absent-button">Absent</button>
+            <button onClick={() => setAbsent(Absent2+1) } id="absent-button">Absent</button>
           </div>
           
         </div>
