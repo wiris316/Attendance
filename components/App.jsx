@@ -20,6 +20,9 @@ class App extends Component {
             <Link to='/student'>Student Cards</Link>
             <br></br>
             <Link to='/roster'>Roster</Link>
+        <Link to='/add'>
+          <button className="add-button" type="button">Add New Student</button>
+        </Link>
             <br></br>
           </nav><br/>
 
@@ -32,9 +35,6 @@ class App extends Component {
             <Route path='/add' element={<CreateStudent/>} />
           </Routes>
         </main><br/>
-        <Link to='/add'>
-          <button className="add-button" type="button">Add New Student</button>
-        </Link>
     </BrowserRouter>
 
     )

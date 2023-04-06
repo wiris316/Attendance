@@ -1,8 +1,10 @@
-import React from 'react'; 
+import React, {useState} from 'react'; 
 import DeleteStudent from './DeleteStudent'
 
 const StudentCard = (prop) => {
-  const {fName, lName, Absent, Present} = prop;
+  const { fName, lName, Absent, Present } = prop;
+  const [Present2, setPresent] = useState( Present )
+  console.log('present2 herereeee', Present2)
   
   const handleDelete = e => {
     fetch('/students/delete', {
@@ -15,6 +17,12 @@ const StudentCard = (prop) => {
     .catch(err=> console.log('Error handling delete'))
     console.log('yelllooooooow do somethingggg')
   }
+
+  // const increment = (e) => {
+  // const 
+  //   { Present } ++;
+  //   return { Present };
+  // }
   
   return (
     <div className="container">
@@ -25,14 +33,14 @@ const StudentCard = (prop) => {
 
           
           <div className="attendance-info">
-            Attended: {Present}
+            Attended: {Present2}
             <div>
-              <div class="bar-container">
-                <div class="attendance present">{Present}</div>
+              <div className="bar-container">
+                <div className="attendance present">{Present}</div>
               </div><br/>
               Absent: {Absent}<br />
   
-              <div class="bar-container">
+              <div className="bar-container">
               <div class="attendance absent">{Absent}</div>
               </div>
             </div><br />
@@ -42,9 +50,9 @@ const StudentCard = (prop) => {
 
           </div>
           <div className="attendance-buttons">
-            <button id="present-button">Present</button>
+            <button onClick={() => setPresent( Present2+1 )} id="present-button">Present</button>
             <button id="absent-button">Absent</button>
-            <button onClick={handleDelete}>CLICK CLICK CLICK</button>
+            <button onClick={handleDelete}>DELETE</button>
           </div>
           
         </div>

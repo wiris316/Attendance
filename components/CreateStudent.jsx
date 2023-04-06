@@ -70,7 +70,6 @@ const CreateStudent = props => {
 
   return (
     <section className="createStudentForm">
-      <header className="pageHeader">
         <h2>Add Students to the Roster</h2>
         <div className="StudentInfoFields">
           <label htmlFor="fName"></label>
@@ -87,19 +86,18 @@ const CreateStudent = props => {
           {/* <input name="birthday" placeholder="Birthday" /*value={birth_year} onChange={birthYearOnChange}/* /> */
             <input name="birthday" placeholder="Birthday" onChange={handlebirthdayChange} />}
           
-        </div>
-        <div className="StudentInfoFields">
+        </div><br/>
+        {/* <div className="StudentInfoFields">
           <label htmlFor="gender">Gender: </label>
           <select name="gender" id="gender-select"> </select>
-        </div>
-        <button type="submit" onClick={handleSubmit} >SUBMIT</button>
+        </div> */}
+        <button id="submit-button" type="submit" onClick={handleSubmit} >SUBMIT</button><br/>
 
         <Link to="/" className="backLink">
-          <button type="button" className="btnSecondary">
+          {/* <button type="button" className="btnSecondary">
               Back to Attendance Sheet
-          </button>
+          </button> */}
         </Link>
-      </header>
 
     </section>
   );
