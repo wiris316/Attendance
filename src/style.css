@@ -81,6 +81,10 @@ nav {
   margin: 10px;
 }
 
+.title{
+  margin-left: 10px;
+}
+
 .card-title {
   color: #666666;
   font-weight: 500;
@@ -97,15 +101,26 @@ nav {
 
 .attendance-buttons{
   /* position:absolute; */
-  bottom:0;
+  /* bottom:0%; */
+  /* margin-bottom: 0%; */
+  padding-top: 35px;
+  display:flex;
+  align-items: center;
+  justify-content:space-around;
+  /* position: static; */
 }
 
 #present-button{
-  height: 50px;
+  height: 30px;
+  border:none;
+  bottom: 0%;
+  box-shadow: -1rem 0 3rem #0003;
 }
 
 #absent-button{
-  height: 50px;
+  height: 30px;
+  border:none;
+  box-shadow: -1rem 0 3rem #0003;
 }
 
 #submit-button{
@@ -115,7 +130,12 @@ nav {
 }
 
 #delete-button{
-  right: 0%;
+  /* right: 0%; */
+  float:right;
+  background-color: rgba(226, 203, 206, 0.482);
+  color: rgb(119, 114, 114);
+  border: none;
+  border-radius: 20%;
 }
 
 .StudentInfoFields {
@@ -126,7 +146,7 @@ nav {
   width:min-content;
   background-color: white;
   /* border:solid; */
-  border-radius: 200px;
+  border-radius: 280px;
   padding: 80px;
   padding-bottom:100px;
   box-shadow: -1rem 0 3rem #0003;
@@ -158,19 +178,20 @@ p {
   border-radius: 15px;
 }
 
+.attendance-info{
+  align-content: center;
+}
+
+
 .present {
   width: 85%;
-  background-color: rgba(135,240,112);
+  background-color: rgb(95, 208, 87);
 }
 
 .absent {
-  background-color: rgba(232, 150, 102, 0.813);
+  background-color: rgba(203, 114, 133, 0.675);
   width: 15%;
 }
-
-
-
-
 
 
  .card:hover {
@@ -179,3 +200,6 @@ p {
  } 
 
 
+
+
+ 
