@@ -16,7 +16,7 @@ class Students extends Component {
     fetch('/students')
       .then(res => res.json())
       .then(data => {
-        console.log(data)
+        // console.log(data)
         this.setState({roster: data})
       })
       .catch(err=> console.error(err))

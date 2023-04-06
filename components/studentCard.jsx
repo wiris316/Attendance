@@ -3,8 +3,8 @@ import DeleteStudent from './DeleteStudent'
 
 const StudentCard = (prop) => {
   const { fName, lName, Absent, Present } = prop;
-  const [Present2, setPresent] = useState( Present )
-  console.log('present2 herereeee', Present2)
+  const [Present2, setPresent] = useState(Present)
+  // console.log('present2 herereeee', Present2)
   
   const handleDelete = e => {
     fetch('/students/delete', {
@@ -14,6 +14,7 @@ const StudentCard = (prop) => {
       },
       body:JSON.stringify({firstname: fName})
     })
+    .then(()=> window.location.reload())
     .catch(err=> console.log('Error handling delete'))
     console.log('yelllooooooow do somethingggg')
   }
@@ -36,7 +37,7 @@ const StudentCard = (prop) => {
             Attended: {Present2}
             <div>
               <div className="bar-container">
-                <div className="attendance present">{Present}</div>
+                <div className="attendance present">{Present2}</div>
               </div><br/>
               Absent: {Absent}<br />
   

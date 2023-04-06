@@ -15,11 +15,11 @@ class App extends Component {
       <BrowserRouter>
         <header>
           <nav>
-            <Link to='/'>Attendance Sheet</Link>
+            <Link to='/attendance'>Weekly Attendance Sheet</Link>
             <br></br>
             <Link to='/student'>Student Cards</Link>
             <br></br>
-            <Link to='/roster'>Roster</Link>
+            <Link to='/'>Roster</Link>
         <Link to='/add'>
           <button className="add-button" type="button">Add New Student</button>
         </Link>
@@ -29,8 +29,8 @@ class App extends Component {
         </header>
         <main>
           <Routes>
-            <Route path='/' element={<Month/>} />
-            <Route path='/roster' element={<Students/>} />
+            <Route path='/attendance' element={<Month/>} />
+            <Route path='/' element={<Students/>} />
             <Route path='/student' element={<StudentCard/>} />
             <Route path='/add' element={<CreateStudent/>} />
           </Routes>

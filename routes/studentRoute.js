@@ -18,5 +18,9 @@ router.delete('/delete',
   studentController.deleteStudent,
   (req, res) => res.status(200).json(res.locals.students))
 
+router.get('/roster',
+  studentController.getStudents,
+  (req, res) => res.status(200).json(res.locals.students))
+
 //Users/user/Desktop/SoloProject_draft/server/controllers/studentController.js
 module.exports = router;

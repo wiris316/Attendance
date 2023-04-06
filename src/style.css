@@ -27,14 +27,12 @@ nav {
 
 .square {
   border: solid 1.5px;
-}
-
-.square {
-  height: 50px;
-  width: 50px;
+  width: 60px;
+  height: 60px;
   background-color: white;
   box-shadow: -1rem 0 3rem #0003;
 }
+
 
 .row {
   border:solid;
@@ -44,6 +42,23 @@ nav {
   
 }
 
+.Month {
+  display:grid;
+  justify-content:center;
+  margin:auto;
+  /* background-color:blue; */
+}
+
+#attendance-header{
+  display:flex;
+  justify-content: center;
+}
+
+#attendance-names{
+  display: flex;
+  margin:auto;
+  justify-content: center;
+}
 
 .container {
   display: flex;
