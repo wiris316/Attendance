@@ -1,5 +1,5 @@
 body {
-  background-color: #a49dcbc6;
+  background-color: #c7c0ef7d;
   font-family: 'Open Sans', sans-serif;
   width: 100%;
   position:relative;
@@ -32,6 +32,8 @@ nav {
 .square {
   height: 50px;
   width: 50px;
+  background-color: white;
+  box-shadow: -1rem 0 3rem #0003;
 }
 
 .row {
@@ -39,6 +41,7 @@ nav {
   /* background-color: red; */
   display:flex;
   width: fit-content;
+  
 }
 
 
@@ -72,9 +75,10 @@ nav {
 
 }
 
-/* .attendance-body{
-  display:flex;
-} */
+.attendance-body{
+  /* display:flex; */
+  margin-left: 10px;
+}
 
 .attendance-buttons{
   /* position:absolute; */
@@ -87,6 +91,10 @@ nav {
 
 #absent-button{
   height: 50px;
+}
+
+#delete-button{
+  right: 10px;
 }
 
 .createStudentForm {
@@ -104,20 +112,40 @@ nav {
 }
 
 
- /* .card:not(:first-child) {
-    margin-left: -50px;
+p {
+  font-size: 20px;
+}
 
-}  */
-/* 
+.bar-container {
+  background-color: rgb(192, 192, 192);
+  width: 80%;
+  border-radius: 15px;
+  height: 30px;
+}
+
+.attendance {
+  height: 25px;
+  color: white;
+  padding: 1%;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+.present {
+  width: 85%;
+  background-color: rgba(135,240,112);
+}
+
+.absent {
+  background-color: rgba(232, 150, 102, 0.813);
+  width: 15%;
+}
+
+
  .card:hover {
   transform: translateY(-20px); 
- transition: 0.4s ease-out;
-
+  transition: 0.4s ease-out;
  } 
 
- .card:hover ~ .card {
-  position: relative;
-  left: 50px;
-  transition: 0.4s ease-out;
-}   */
 

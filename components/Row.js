@@ -2,7 +2,7 @@ import React from 'react';
 import Square from './Square'
 
 function Row(props) {
-  // const { rowID } = props;
+  const { fName, lName } = props;
   let Rows = []
   for (let i = 1; i <= 20; i++) {
   Rows.push(<Square className="square" squareID={i}/>)
@@ -10,6 +10,7 @@ function Row(props) {
   }
   return (
     <div className="row">
+      <div id="attendance-sheet-name">{fName}</div>
       {Rows}
     </div>
   );
