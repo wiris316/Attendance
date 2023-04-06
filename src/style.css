@@ -1,7 +1,9 @@
-
 body {
   background-color: #a49dcbc6;
   font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  position:relative;
+  overflow-x: hidden;
   /* display: grid; */
 
 }
@@ -42,9 +44,12 @@ nav {
 
 .container {
   display: flex;
-  height: 300px;
-  width: 300px;
-  display: flex;
+  flex-wrap: wrap ;
+  /* flex-flow: row; */
+  flex-basis: content;
+  /* height: 500px; */
+  width: 100%;
+  /* display: flex; */
   margin: 30px;
 
 }

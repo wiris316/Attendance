@@ -29,7 +29,7 @@ class Students extends Component {
     }
 
     return (
-      <div>
+      <div className="container">
         {data}
       </div>
     )
