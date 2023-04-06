@@ -1,32 +1,98 @@
 import React, { useState, useEffect } from 'react';
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
+// const db = require('../models/studentModels');
 // import { withRouter } from "react-router";
 
 // Custom hook for handling input boxes
 // saves us from creating onChange handlers for them individually
-const useInput = init => {
-  const [ value, setValue ] = useState(init);
-  const onChange = e => {
-    setValue(e.target.value);
-  };
-  // return the value with the onChange function instead of setValue function
-  return [ value, onChange ];
-};
+// const useInput = init => {
+//   const [ value, setValue ] = useState(init);
+//   const onChange = e => {
+//     setValue(e.target.value);
+//   };
+//   // return the value with the onChange function instead of setValue function
+//   return [ value, onChange ];
+// };
 
 const CreateStudent = props => {
-  const [ name, nameOnChange ] = useInput('');
-  const [ gender, genderOnChange ] = useInput('');
-  const [ birth_year, birthYearOnChange ] = useInput('');
-  const [ eye_color, eyeColorOnChange ] = useInput('');
+  const [ fName, setfName ] = useState('');
+  const [ lName, setlName ] = useState('');
+  // const [ birthday, birthdayOnChange ] = useInput('');
+
+
+//   const handlefnameChange = e => {
+//     const i = e.target.value;
+
+// }
+  
+  const handlefNameChange = e => {
+    const newValue = e.target.value
+    setfName(newValue);
+  }
+  const handlelNameChange = e => {
+    const newValue = e.target.value
+    setlName(newValue);
+  }
+  
+
+
+  ///////// ATTEMPT TO CAPTURE FROM USER INPUT ///////////
+  // const handleSubmit = e => {
+  //   // e.preventDefault();
+  //   fetch('/add', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json'
+  //     },
+  //     body:JSON.stringify({firstname: fName, lastname: lName})
+  //   })
+  //     .then(res => res.json())
+  //     .then(data => {
+  //       console.log(data);
+  //       setfName('');
+  //       setlName('');
+  //     })
+  //   .catch(err=> console.log('Error handling submit'))
+  // }
+
+  const handleSubmit = e => {
+    // const queryStr = `
+    // INSERT INTO PEOPLE (firstname, lastname)
+    // VALUES ('first1', 'last1')
+    // RETURNING *;
+    // `
+    // db.query(queryStr);
+
+  }
+
 
 
   return (
-    <section className="mainSection createCharContainer">
+    <section className="createStudentForm">
       <header className="pageHeader">
         <h2>Add Students to the Roster</h2>
+        <div className="StudentInfoFields">
+          <label htmlFor="fName"></label>
+          <input name="fName" placeholder="FirstName" value="fName" onChange={handlefNameChange} required/>
+        </div>
+        <div className="StudentInfoFields">
+          <label htmlFor="fName"></label>
+          <input name="fName" placeholder="LastName" value="lName" onChange={handlelNameChange} required/>
+        </div>
+        <div className="StudentInfoFields">
+          <label htmlFor="birthday"></label>
+          <input name="birthday" placeholder="Birthday" /*value={birth_year} onChange={birthYearOnChange}*/ />
+        </div>
+        <div className="StudentInfoFields">
+          <label htmlFor="gender">Gender: </label>
+          <select name="gender" id="gender-select"> </select>
+        </div>
+        <button onClick={handleSubmit} >SUBMIT</button>
+
         <Link to="/" className="backLink">
           <button type="button" className="btnSecondary">
-              Back to Roster
+              Back to Attendance Sheet
           </button>
         </Link>
       </header>
