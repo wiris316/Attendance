@@ -41,36 +41,26 @@ nav {
 
 
 .container {
-  /* position: relative; */
   display: flex;
-  /* flex-direction: row; */
   height: 300px;
   width: 300px;
-  /* width: 500px; */
-  /* top: 50px; */
-  /* left: calc(50% - 300px); */
   display: flex;
   margin: 30px;
 
 }
 
 .card {
-  /* display: flex; */
   height: 300px;
   width: 300px;
-  /* background-color: #C9B8FF; */
   background-color: white;
   border-radius: 10px;
   box-shadow: -1rem 0 3rem #0003;
   margin: 10px;
-  /* position: relative; */
-  /* left: 0px; */
 }
 
 .card-title {
   color: #666666;
   font-weight: 500;
-  /* position: absolute; */
   margin: 0%;
   left: 20px;
   top: 15px;
@@ -113,7 +103,7 @@ nav {
     margin-left: -50px;
 
 }  */
-
+/* 
  .card:hover {
   transform: translateY(-20px); 
  transition: 0.4s ease-out;
@@ -124,5 +114,5 @@ nav {
   position: relative;
   left: 50px;
   transition: 0.4s ease-out;
-}  
+}   */
 

@@ -16,22 +16,22 @@ studentController.getStudents = (req, res, next) => {
 }
 
 studentController.addStudents = (req, res, next) => {
-  const { fName, lName } = req.body;
-  console.log('hereeeeee')
-
+  // const { fName, lName } = req.body;
+  const { firstname, lastname } = req.body;
   const queryParams = [firstname, lastname];
   const queryStr = `
   INSERT INTO students (firstname, lastname)
-  VALUES ('test', 'testagain')
-  RETURNING *
+  VALUES ($1, $2)
+  RETURNING *;
   `
+  
   db.query(queryStr, queryParams)
     .then(data => {
-      console.log('daaaaata',data)
-      res.locals.character = data.rows[0];
+      res.locals.students = data.rows[0];
       return next()
     })
-  .catch((err)=> next(err))
+    .catch((err) => next(err))
+  
 
   // const queryStr = `
   // INSERT INTO people (firstname, lastname)
@@ -40,6 +40,5 @@ studentController.addStudents = (req, res, next) => {
   // `
   // db.query(queryStr);
 }
-
 
 module.exports = studentController;

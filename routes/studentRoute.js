@@ -11,7 +11,8 @@ router.get('/',
 
 router.post('/add',
   studentController.addStudents,
-  (req,res) => res.status(200).send('yoyoyo'))
+  // (req,res) => res.status(200).send('yoyoyo'))
+  (req, res) => res.status(200).json(res.locals.students))
 
 //Users/user/Desktop/SoloProject_draft/server/controllers/studentController.js
 module.exports = router;

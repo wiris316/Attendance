@@ -3,10 +3,10 @@ import React from 'react';
 const StudentCard = (prop) => {
   const {fName, lName, Absent, Present} = prop;
   return (
-    <div class="container">
-      <div class="card">
-        <h3 class="card-title">{fName} {lName}</h3><br/>
-        <div class="attendance-body">
+    <div className="container">
+      <div className="card">
+        <h3 className="title">{fName} {lName}</h3><br/>
+        <div className="attendance-body">
           <div className="attendance-info">
             Absent: {Absent}<br/>
             Attended: {Present}
@@ -19,7 +19,7 @@ const StudentCard = (prop) => {
         </div>
 
       </div>
-    </div>
+    </div> 
   );
 };
 

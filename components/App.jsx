@@ -3,7 +3,6 @@ import { Component } from "react";
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
 import Month from './Month.js'
-import Row from "./Row.js"
 import Students from "./Students.jsx"
 import StudentCard from "./StudentCard.jsx";
 import CreateStudent from "./CreateStudent.jsx";
