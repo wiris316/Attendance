@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 
 const Square = (props) => {
-  const { id } = props;
+  const { id, fName, lName } = props;
   let [checked, markChecked] = useState(localStorage.getItem(`square_${id}`) || '')
 
   useEffect(() => {

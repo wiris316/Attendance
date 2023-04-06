@@ -31,14 +31,24 @@ studentController.addStudents = (req, res, next) => {
       return next()
     })
     .catch((err) => next(err))
-  
+}
 
-  // const queryStr = `
-  // INSERT INTO people (firstname, lastname)
-  // VALUES ('test1', 'testtest')
-  // RETURNING *
-  // `
-  // db.query(queryStr);
+
+studentController.deleteStudent = (req, res, next) => {
+  const { firstname } = req.body;
+  console.log(firstname)
+  const queryStr = `
+  DELETE FROM students
+  WHERE firstname = $1
+  RETURNING *
+  `
+  db.query(queryStr, [firstname])
+    .then(data => {
+    console.log('doneeeee')
+    res.locals.students = data.rows[0];
+    return next();
+  })
+  .catch(err => console.log("errrorr in delete student"));
 }
 
 module.exports = studentController;

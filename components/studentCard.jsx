@@ -1,7 +1,21 @@
 import React from 'react'; 
+import DeleteStudent from './DeleteStudent'
 
 const StudentCard = (prop) => {
   const {fName, lName, Absent, Present} = prop;
+  
+  const handleDelete = e => {
+    fetch('/students/delete', {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body:JSON.stringify({firstname: fName})
+    })
+    .catch(err=> console.log('Error handling delete'))
+    console.log('yelllooooooow do somethingggg')
+  }
+  
   return (
     <div className="container">
       <div className="card">
@@ -30,7 +44,7 @@ const StudentCard = (prop) => {
           <div className="attendance-buttons">
             <button id="present-button">Present</button>
             <button id="absent-button">Absent</button>
-            <button id="delete-button">Delete</button>
+            <button onClick={handleDelete}>CLICK CLICK CLICK</button>
           </div>
           
         </div>

@@ -10,7 +10,7 @@ function Row(props) {
   }
   return (
     <div className="row">
-      <div id="attendance-sheet-name">{fName}</div>
+      <div id="attendance-sheet-name">{fName} NAME{lName}</div>
       {Rows}
     </div>
   );

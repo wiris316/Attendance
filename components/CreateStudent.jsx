@@ -19,13 +19,7 @@ const CreateStudent = props => {
   const [ fName, setfName ] = useState('');
   const [lName, setlName] = useState('');
   const [ birthday, setbirthday ] = useState('');
-  // const [ birthday, birthdayOnChange ] = useInput('');
 
-
-//   const handlefnameChange = e => {
-//     const i = e.target.value;
-
-// }
   
   const handlefNameChange = e => {
     const newValue = e.target.value
