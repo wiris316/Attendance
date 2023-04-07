@@ -53,7 +53,7 @@ const CreateStudent = props => {
       })
       // .then(()=> redirect('/') )
       .catch(err => console.log('Error handling submit'))
-    window.location.replace('/')
+    // window.location.replace('/')
   }
 
   // const handleSubmit = e => {
