@@ -1,15 +1,235 @@
-.square {
-  border: solid 1.5px;
+body {
+  background-color: #c7c0ef7d;
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  position:relative;
+  overflow-x: hidden;
+  /* display: grid; */
+
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  /* border: solid; */
+  border-radius: 30px;
+  height: 50px;
+  background-color: white;
+  box-shadow: -1rem 0 3rem #0003;
+}
+
+.add-button{
+  display:flex;
+  /* align-items: center;  */
+  margin:auto;
 }
 
 .square {
-  height: 50px;
-  width: 50px;
+  border: solid 1.5px;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  box-shadow: -1rem 0 3rem #0003;
 }
+
 
 .row {
   border:solid;
   /* background-color: red; */
   display:flex;
   width: fit-content;
+  
 }
+
+.Month {
+  display:grid;
+  justify-content:center;
+  margin:auto;
+  /* background-color:blue; */
+}
+
+#attendance-header{
+  display:flex;
+  justify-content: center;
+}
+
+#attendance-names{
+  display: flex;
+  margin:auto;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap ;
+  /* flex-flow: row; */
+  flex-basis: content;
+  /* height: 500px; */
+  width: 100%;
+  height: 110%;
+  /* display: flex; */
+  margin: 30px;
+
+}
+
+.card {
+  height: 360px;
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #0003;
+  margin: 10px;
+}
+
+.title{
+  margin-left: 10px;
+}
+
+.card-title {
+  color: #666666;
+  font-weight: 500;
+  margin: 0%;
+  left: 20px;
+  top: 15px;
+
+}
+
+.attendance-body{
+  /* display:flex; */
+  margin-left: 10px;
+}
+
+.attendance-buttons{
+  /* position:absolute; */
+  /* bottom:0%; */
+  /* margin-bottom: 0%; */
+  padding-top: 35px;
+  display:flex;
+  align-items: center;
+  justify-content:space-around;
+  /* position: static; */
+}
+
+#present-button{
+  height: 30px;
+  border:none;
+  bottom: 0%;
+  box-shadow: -1rem 0 3rem #0003;
+}
+
+#absent-button{
+  height: 30px;
+  border:none;
+  box-shadow: -1rem 0 3rem #0003;
+}
+
+#submit-button{
+  display:flex;
+  /* justify-content: center; */
+  margin:auto;
+}
+
+#delete-button{
+  /* right: 0%; */
+  float:right;
+  background-color: rgba(226, 203, 206, 0.482);
+  color: rgb(119, 114, 114);
+  border: none;
+  border-radius: 20%;
+}
+
+.StudentInfoFields {
+  display: grid;
+}
+
+.createStudentForm {
+  width:min-content;
+  background-color: white;
+  /* border:solid; */
+  border-radius: 280px;
+  padding: 80px;
+  padding-bottom:100px;
+  box-shadow: -1rem 0 3rem #0003;
+  /* display:flex; */
+  /* margin: auto; */
+  /* justify-content: center; */
+  margin:auto;
+
+}
+
+
+p {
+  font-size: 20px;
+}
+
+.bar-container {
+  background-color: rgb(192, 192, 192);
+  width: 80%;
+  border-radius: 15px;
+  height: 30px;
+}
+
+.attendance {
+  height: 25px;
+  color: white;
+  padding: 1%;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+.attendance-info{
+  align-content: center;
+}
+
+
+.present {
+  width: 85%;
+  background-color: rgb(97, 217, 88);
+}
+
+.absent {
+  background-color: rgba(228, 102, 34, 0.675);
+  width: 15%;
+}
+
+
+ .card:hover {
+  transform: translateY(-20px); 
+  transition: 0.4s ease-out;
+ } 
+
+
+ .a-box{
+  border:solid;
+  border-color: rgb(214, 210, 210);
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  margin-right: 15px;
+  text-align:center;
+ }
+
+ .b-box{
+  border:solid;
+  border-color: rgb(214, 210, 210);
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  margin-left: 15px;
+  text-align:center;
+ }
+ 
+ .thebox{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 15px;
+ }
+
+ .LessonPlanTemplate{
+  margin:auto;
+  background-color:white;
+  border-radius: 50px;
+ }
