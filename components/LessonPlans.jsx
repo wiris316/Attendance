@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 const NPS = require('../models/lessonModels');
 
 
-// const apiKey = "LE9nqFrnQZn5oCUH3qOpQhAPVl3dpPQvWJkuX7Ju"
+// const apiKey = ""
 // const apiUrl = "https://developer.nps.gov/api/v1/lessonplans?limit=10&start=5&q=lessons";
 
 // fetch(apiUrl, {

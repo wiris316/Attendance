@@ -14,7 +14,7 @@ const DeleteStudent = prop => {
   //     },
   //     body:JSON.stringify({firstname: fName})
   //   })
-  //   .catch(err=> console.log('ErrorOOR handling delete'))
+  //   .catch(err=> console.log('Error handling delete'))
   //   // console.log('rowowowow')
   }
 
